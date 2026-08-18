@@ -1,52 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Web Page</title>
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythili Thakur - Resume</title>
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 50px;
-            background-color: 
-            #5a481500;
+            background-color: #412403;
+            color: #523510;
+            line-height: 1.6;
         }
- 
+
         .container {
-            background: 
-            rgb(212, 157, 3);
-            padding: 30px;
-            max-width: 500px;
-            margin: auto;
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 10px;
         }
- 
-        button {
-            padding: 10px 20px;
-            cursor: pointer;
-            color: black;
+
+        header {
+            text-align: center;
+            background-color: #8a621a;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
         }
-</style>
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        section h2 {
+            color: #664008;
+            border-bottom: 2px solid #ac8229;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #775918;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
- 
+
 <body>
- 
+
     <div class="container">
-<h1>My Static Web Page</h1>
-<p id="message">Welcome to my website!</p>
- 
-        <button onclick="changeMessage()">Click Me</button>
-</div>
- 
-    <script>
-        function changeMessage() {
-            document.getElementById("message").innerHTML =
-                "Hello! This page is hosted using GitHub Pages.";
-        }
-</script>
- 
+
+        <header>
+            <h1>Mythili Thakur</h1>
+            <p>Student | Web Developer | Technology Enthusiast</p>
+
+            <div class="contact">
+                <p>Email: mythili@example.com</p>
+                <p>Phone: +91 XXXXX XXXXX</p>
+                <p>Location: Mumbai, India</p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>
+                A motivated and enthusiastic student looking for opportunities
+                to improve my technical skills and gain practical experience
+                in web development and software technology.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <h3>Sakec (Shah & Anchor Kutchhi Engineering College)</h3>
+            <p>Undergraduate Student</p>
+            <p>Mumbai, Maharashtra</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>C</span>
+                <span>GitHub</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <h3>1. Personal Resume Website</h3>
+            <p>
+                Designed and developed a personal resume website using
+                HTML and CSS and hosted it using GitHub Pages.
+            </p>
+
+            <h3>2. Student Management System</h3>
+            <p>
+                Created a basic application to manage student information,
+                including student names, courses and academic details.
+            </p>
+        </section>
+
+        <section>
+            <h2>Strengths</h2>
+            <ul>
+                <li>Quick learner</li>
+                <li>Good communication skills</li>
+                <li>Problem-solving ability</li>
+                <li>Teamwork</li>
+                <li>Time management</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Marathi</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Declaration</h2>
+            <p>
+                I hereby declare that the information provided above is true
+                and correct to the best of my knowledge.
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2026 Mythili Thakur</p>
+        </footer>
+
+    </div>
+
 </body>
 </html>
